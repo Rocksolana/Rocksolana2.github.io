@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+div {
+    background-color: blue;
+    color:white;
+    padding: 15px;
+}
+/*tablet*/
+
+@media (min-width:768px) {
+div { background-color: red;
+color: black;
+    }
+}
+
+/*laptop*/
+
+@media (min-width:992px) {
+    div { background-color:green;
+    color: black;
+        }
+    }
+
+ /*desktop*/
+
+@media (min-width:1200px) {
+    div { background-color:yellow;
+    color: black;
+        }
+    }

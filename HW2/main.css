@@ -1,0 +1,26 @@
+
+.container {
+    border: 4px double black;
+    background: rgb(176, 212, 231);
+	width: 900px;
+	margin: 0 auto;
+}   
+.name {
+    align-items: left;
+}
+
+.info {    
+    display: inline-grid;
+    float: left;
+    margin-left: 180px;
+    margin-top: 10px;
+    
+}
+.foto {
+    border: 1px dashed grey;
+    width: 85px;
+    height: 108px;
+    float: right;
+    margin-right: 220px;
+    margin-bottom: 16px;
+    }
