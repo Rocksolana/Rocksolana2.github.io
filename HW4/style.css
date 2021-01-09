@@ -7,10 +7,13 @@ body {
     position: relative;
     background: black;
 }
-.menu li { width: 100px;
+.menu > li { width: 100px;
     margin-right: 40px;
     float: left;
     text-align: center;
+    position: relative;
+    background-color: black;
+    padding-top: 10px;
 }
 .menu a {
     color:white;
@@ -31,24 +34,22 @@ body {
     display: block;
     clear: both;
 }
-
-/*.menu > li > a.active, */
 .submenu a:hover { 
     color:green;
 }
-/*.menu,.submenu { color: inherit;
-}*/
-.submenu {display: none;
-        color:green;     
+.submenu {
+        display: none;
+        color:green; 
+        background-color: black;  
+        padding-left: 0px;
+        width: 100px;  
   }
-.submenu ul {position: absolute;
-            right:50px;
-
+.submenu ul {
+          position: absolute;
+          right:50px;
   }
 .submenu li {
-    position: relative; 
     list-style:none;
-    right:40px; 
   }
 .submenu li a {
     text-decoration: none;
@@ -57,7 +58,6 @@ body {
 li:hover .submenu  {
      display: block; 
  } 
-
  .submenu {  
     z-index: 5;
     min-width: 100px; 
@@ -66,16 +66,16 @@ li:hover .submenu  {
     transform-origin: 0% 0%;
     transform: rotateX(-90deg);
     transition: .3s linear;  
+    position: absolute;
+    left:0px;
   }
-  .submenu li {position: relative;
-}
+  .submenu li {position: relative;}
   .submenu li a {
     padding: 5px 5px;
-    
   }
   .submenu .submenu {
     position: absolute;
-    left: 70%;
+    left: 80%;
     top: -1px;
     transition: .3s linear;
   }
